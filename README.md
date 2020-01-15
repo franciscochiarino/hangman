@@ -23,7 +23,8 @@ A simple hangman game where you have a certain amount of chances to guess a word
 ## Time
 
 -   Estimated: 20 hours over two weeks.
--   Actual: [complete]
+
+-   Actual: After 3.5 hours the project is working fine (keep in mind, that most of the js code was written before as an exercise). It could be done better (make it responsive / add features), but what I had in mind is done. From now on I'm just going to try other stuff to add on top of it. 
 
 ## New Skills
 
@@ -31,9 +32,11 @@ For this proyect I am going to have to learn more about DOM. My other main goals
 
 ## Challenges + Lessons Learned
 
-[complete]
+-   Since I used a piece of code I've written before, this exercise was basicaly about aplying DOM and making the code more user friendly. However, the most valuable lesson learned in this exercise is to comment code. It took me quite a while to figure out how I approached the exercise a few months ago. And this was code I wrote myself!
 
 ## Archievements
 
-[complete]
-
+-   Got better at writing HTML from JS.
+-   Used svg in a very practical way.
+-   Definately got better at commenting code.
+-   Was consistent commiting progress and creating branches.
