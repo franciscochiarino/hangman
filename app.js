@@ -1,6 +1,6 @@
 
 // Variables from index.html
-const display = document.getElementById('display');
+const wordDisplay = document.getElementById('word-display');
 const letter = document.getElementById('letter');
 const head = document.getElementById('head');
 const body = document.getElementById('body');
@@ -15,8 +15,8 @@ const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank let
 
 // Application
 
-// Display's initial state:
-display.innerHTML = `<p id="guess-characters"> ${guesses.join(' ')} </p>`
+// wordDisplay's initial state:
+wordDisplay.innerHTML = `<p id="guess-characters"> ${guesses.join(' ')} </p>`
 
 const guessLetter = (pickedLetter) => {
     let outputMessage = '';
@@ -31,7 +31,7 @@ const guessLetter = (pickedLetter) => {
         if (letters[i] === pickedLetter) { 
             // If true, blank space will be replace by letter in the guesses array:
             guesses[i] = pickedLetter;
-            display.innerHTML = `<p id="guess-characters"> ${guesses.join(' ')} </p>`
+            wordDisplay.innerHTML = `<p id="guess-characters"> ${guesses.join(' ')} </p>`
         }
     }
 }
