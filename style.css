@@ -1,0 +1,17 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+
+html {
+    font-size: 100%;
+}
+
+section {
+    margin: 2rem;
+}

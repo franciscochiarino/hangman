@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="author" content="Francisco Chiarino">
     <title>Hangman</title>
 </head>
 <body>
+    <!-- Hangman Illustration -->
     <section>
         <svg width="239" height="296" viewBox="0 0 239 296" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="hangman">
                 <!-- Hang Stand -->
                 <g id="hang-stand">
-                    <line id="Line 1" y1="293" x2="107" y2="293" stroke="black" stroke-width="6"/>
-                    <line id="Line 4" x1="53.0506" y1="59.3659" x2="107.758" y2="5.94937" stroke="black" stroke-width="6" stroke-linecap="round"/>
-                    <line id="Line 3" x1="48" y1="5" x2="239" y2="5" stroke="black" stroke-width="6"/>
-                    <line id="Line 2" x1="53" y1="293" x2="53" stroke="black" stroke-width="6"/>
-                    <line id="Line 5" x1="208.5" y1="6" x2="208.5" y2="64" stroke="black"/>
+                    <line y1="293" x2="107" y2="293" stroke="black" stroke-width="6"/>
+                    <line x1="53.0506" y1="59.3659" x2="107.758" y2="5.94937" stroke="black" stroke-width="6" stroke-linecap="round"/>
+                    <line x1="48" y1="5" x2="239" y2="5" stroke="black" stroke-width="6"/>
+                    <line x1="53" y1="293" x2="53" stroke="black" stroke-width="6"/>
+                    <line x1="208.5" y1="6" x2="208.5" y2="64" stroke="black"/>
                 </g>
                 <!-- Head -->
                 <g id="head">
                     <circle id="circle" cx="208" cy="90" r="25.5" fill="#FBDAB4" stroke="black"/>
                     <path id="hair" d="M182 90L194.381 75L207.752 78.75L220.629 75L234 90" stroke="black"/>
                     <g id="eye-left">
-                    <circle id="Ellipse 2" cx="200.5" cy="85.5" r="2.5" fill="#F8F4F4"/>
-                    <circle id="Ellipse 4" cx="200.5" cy="86.5" r="0.5" fill="black"/>
+                    <circle cx="200.5" cy="85.5" r="2.5" fill="#F8F4F4"/>
+                    <circle cx="200.5" cy="86.5" r="0.5" fill="black"/>
                     </g>
                     <g id="eye-right">
-                    <circle id="Ellipse 3" cx="216.5" cy="85.5" r="2.5" fill="#F8F4F4"/>
-                    <circle id="Ellipse 5" cx="216.5" cy="86.5" r="0.5" fill="black"/>
+                    <circle cx="216.5" cy="85.5" r="2.5" fill="#F8F4F4"/>
+                    <circle cx="216.5" cy="86.5" r="0.5" fill="black"/>
                     </g>
                     <path id="nose" d="M208.5 89.5L207.5 96H209.5" stroke="black"/>
                     <path id="mouth-sad" d="M202 106.714L207.845 105.76C210.665 105.3 213.486 106.577 215 109V109" stroke="black"/>
@@ -46,6 +48,10 @@
                 <line id="leg-left" x1="190.192" y1="254.039" x2="207.367" y2="212.808" stroke="black" stroke-width="3" stroke-linecap="round"/>
             </g>
         </svg>
+    </section>
+    <!-- Stuff displayed by app.js -->
+    <section id="display">
+
     </section>
 </body>
 </html>
