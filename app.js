@@ -1,5 +1,5 @@
 
-// Variables from index.html
+// DOM variables
 const wordDisplay = document.getElementById('word-display');
 const outputMessage = document.getElementById('output-message');
 const letter = document.getElementById('letter');
@@ -15,12 +15,11 @@ const letters = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T']; // Any word 
 const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank letter spaces to be completed if letter is guessed.
 let counter = 0; // Checks how many times the player fails.
 
-// Application
-
 // Display's initial state:
 wordDisplay.innerHTML = `<p> ${guesses.join(' ')} </p>`;
 outputMessage.innerHTML = `<p>Time to play hangman!</p>`;
 
+// Application
 const guessLetter = (pickedLetter) => {
     pickedLetter = letter.value;
     let isValid = false; // Needed to check if the player missed.
@@ -85,10 +84,3 @@ const guessLetter = (pickedLetter) => {
     }
     
 }
-
-
-
-// How to write in HTML
-// let display = document.getElementById('display');
-// const array = ['_', '_', '_', '_'];
-// display.innerHTML += `<h1> ${array.join(' ')}</h1>`;
