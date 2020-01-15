@@ -28,3 +28,13 @@ section {
 #word-display {
     font-size: 3rem;
 }
+
+/* Main */
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
