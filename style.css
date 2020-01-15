@@ -29,7 +29,6 @@ section {
 
 body {
     font-family: 'Alata', sans-serif;
-    
 }
 
 #word-display {
@@ -55,7 +54,7 @@ form {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    width: 350px;
+    width: 250px;
     margin: 0 auto;
 }
 
@@ -64,6 +63,7 @@ input {
 }
 
 #letter {
+    width: 4rem;
     padding: 0.2rem 0;
 }
 

@@ -10,6 +10,7 @@
     <title>Hangman</title>
 </head>
 <body>
+    <canvas id="canvas">
     <!-- Hangman Illustration -->
     <div class="flex-container">
         <section>
@@ -17,11 +18,11 @@
                 <g id="hangman">
                     <!-- Hang Stand -->
                     <g id="hang-stand">
-                        <line y1="293" x2="107" y2="293" stroke="black" stroke-width="6"/>
-                        <line x1="53.0506" y1="59.3659" x2="107.758" y2="5.94937" stroke="black" stroke-width="6" stroke-linecap="round"/>
-                        <line x1="48" y1="5" x2="239" y2="5" stroke="black" stroke-width="6"/>
-                        <line x1="53" y1="293" x2="53" stroke="black" stroke-width="6"/>
-                        <line x1="208.5" y1="6" x2="208.5" y2="64" stroke="black"/>
+                        <line y1="293" x2="107" y2="293" stroke="#272727" stroke-width="6"/>
+                        <line x1="53.0506" y1="59.3659" x2="107.758" y2="5.94937" stroke="#272727" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="48" y1="5" x2="239" y2="5" stroke="#272727" stroke-width="6"/>
+                        <line x1="53" y1="293" x2="53" stroke="#272727" stroke-width="6"/>
+                        <line x1="208.5" y1="6" x2="208.5" y2="64" stroke="#272727"/>
                     </g>
                     <!-- Head -->
                     <g id="head">
@@ -60,10 +61,11 @@
     <!-- Form -->
     <form onsubmit="guessLetter(); return false" action="#">
         <label for="hangman">Pick a character:
-            <input type="text" name="letter" id="letter">
+            <input type="text" name="letter" id="letter" required>
         </label>
         <input type="submit">
     </form>
     <script src="app.js"></script>
+    </canvas>
 </body>
 </html>
