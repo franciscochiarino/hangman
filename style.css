@@ -38,3 +38,12 @@ section {
     align-items: center;
     padding: 1rem 0;
 }
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin: 0.5rem;
+}
