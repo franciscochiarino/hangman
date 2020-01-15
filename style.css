@@ -25,8 +25,20 @@ section {
     display: none;
 }
 
+/* Typography */
+
+body {
+    font-family: 'Alata', sans-serif;
+    
+}
+
 #word-display {
-    font-size: 3rem;
+    font-size: 2.3rem;
+    font-family: 'Fira Mono', monospace;
+}
+
+#output-message {
+    font-size: 1.3rem;
 }
 
 /* Main */
@@ -42,8 +54,18 @@ section {
 form {
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
+    width: 350px;
+    margin: 0 auto;
 }
 
 input {
     margin: 0.5rem;
+}
+
+input[type="submit"] {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: #212121;
+    color: #fff;
 }

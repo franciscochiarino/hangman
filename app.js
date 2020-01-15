@@ -57,7 +57,7 @@ const guessLetter = (pickedLetter) => {
         if (counter >= 6) { // Six because 6 body parts appear: head, body, leftArm, rightArm, leftLeg and rightLeg.
             outputMessage.innerHTML = `<p>You lost.</p>`
         } else {
-            outputMessage.innerHTML = `<p>The secret word doen\'t have any ${pickedLetter}</p>`
+            outputMessage.innerHTML = `<p>The secret word doesn\'t have any ${pickedLetter}</p>`
         }
     }   
 
