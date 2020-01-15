@@ -13,6 +13,7 @@ const rightLeg = document.getElementById('leg-right');
 // Local variables
 const letters = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T']; // Any word we want to be guessed.
 const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank letter spaces to be completed if letter is guessed.
+let counter = 0; // Checks how many times the player fails.
 
 // Application
 
@@ -23,7 +24,6 @@ outputMessage.innerHTML = `<p>Time to play hangman!</p>`;
 const guessLetter = (pickedLetter) => {
     pickedLetter = letter.value;
     let isValid = false; // Needed to check if the player missed.
-    let counter = 0;
 
     // Make sure the letter is one upper-case character for a fair comparison:
     pickedLetter = pickedLetter.toLocaleUpperCase(); 
@@ -54,9 +54,14 @@ const guessLetter = (pickedLetter) => {
 
     // Display unguessed letter message:
     else {
-        outputMessage.innerHTML = `<p> The secret word doen\'t have any ${pickedLetter} </p>`
-    }
-
+        counter += 1;
+        console.log(counter);
+        if (counter >= 7) {
+            outputMessage.innerHTML = `<p>You lost.</p>`
+        } else {
+            outputMessage.innerHTML = `<p>The secret word doen\'t have any ${pickedLetter}</p>`
+        }
+    }   
 }
 
 // How to write in HTML
