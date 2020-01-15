@@ -15,8 +15,12 @@ const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank let
 
 // Application
 
-// Initial display state:
+// Display's initial state:
 display.innerHTML += `<p id="guess-characters"> ${guesses.join(' ')} </p>`
+
+const test = () => {
+    console.log(letter.value);
+}
 
 // How to write in HTML
 // let display = document.getElementById('display');
