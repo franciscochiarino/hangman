@@ -16,23 +16,24 @@ const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank let
 // Application
 
 // Display's initial state:
-display.innerHTML += `<p id="guess-characters"> ${guesses.join(' ')} </p>`
+display.innerHTML = `<p id="guess-characters"> ${guesses.join(' ')} </p>`
 
 const guessLetter = (pickedLetter) => {
     let outputMessage = '';
+    pickedLetter = letter.value
 
     // Make sure the letter is upper-case for a fair comparison:
-    pickedLetter = letter.value
     pickedLetter = pickedLetter.toLocaleUpperCase(); 
     console.log(pickedLetter);
 
     // Iterate through letter array, and check if letter is in letters array:
-    // for (let i = 0; i < letters.length; i++) { 
-    //     if (letters[i] === letter) { 
-    //         // If true, blank space will be replace by letter in the guesses array:
-    //         guesses[i] = letter;
-    //     }
-    // }
+    for (let i = 0; i < letters.length; i++) { 
+        if (letters[i] === pickedLetter) { 
+            // If true, blank space will be replace by letter in the guesses array:
+            guesses[i] = pickedLetter;
+            display.innerHTML = `<p id="guess-characters"> ${guesses.join(' ')} </p>`
+        }
+    }
 }
 
 // How to write in HTML
