@@ -18,28 +18,43 @@ const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank let
 
 // Display's initial state:
 wordDisplay.innerHTML = `<p> ${guesses.join(' ')} </p>`;
-outputMessage.innerHTML = '<p>Time to play hangman!</p>';
+outputMessage.innerHTML = `<p>Time to play hangman!</p>`;
 
 const guessLetter = (pickedLetter) => {
-    pickedLetter = letter.value
+    pickedLetter = letter.value;
+    let isValid = false; // Needed to check if the player missed.
+    let counter = 0;
 
-    // Make sure the letter is upper-case for a fair comparison:
+    // Make sure the letter is one upper-case character for a fair comparison:
     pickedLetter = pickedLetter.toLocaleUpperCase(); 
+    if (pickedLetter.length > 1) {
+        return outputMessage.innerHTML = `<p>Make sure you introduce one character at a time</p>`
+    }
     console.log(pickedLetter);
 
     // Iterate through letter array, and check if letter is in letters array:
     for (let i = 0; i < letters.length; i++) { 
         if (letters[i] === pickedLetter) { 
             // If true, blank space will be replace by letter in the guesses array:
+            isValid = true;
             guesses[i] = pickedLetter;
             wordDisplay.innerHTML = `<p> ${guesses.join(' ')} </p>`;
-            outputMessage.innerHTML = `<p> Well done! </p>`;
         }
     }
 
-    // Displays winning message if the word is guessed:
+    // Display winning message if the word is guessed:
     if (letters.toString() === guesses.toString()) {
         outputMessage.innerHTML = `<p> You fucking won! </p>`;
+    }
+
+    // Display guessed letter message:
+    else if (isValid) {
+        outputMessage.innerHTML = `<p> Well done! </p>`;
+    }
+
+    // Display unguessed letter message:
+    else {
+        outputMessage.innerHTML = `<p> The secret word doen\'t have any ${pickedLetter} </p>`
     }
 
 }
