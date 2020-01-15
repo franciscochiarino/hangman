@@ -1,17 +1,22 @@
-// Variables
 
-// index.html
+// Variables from index.html
 const display = document.getElementById('display');
+const letter = document.getElementById('letter')
 const head = document.getElementById('head');
 const body = document.getElementById('body');
 const leftArm = document.getElementById('arm-left');
 const rightArm = document.getElementById('arm-right');
 const leftLeg = document.getElementById('leg-left');
-const leftArm = document.getElementById('leg-right');
-// app.js
-const letters = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T']; // Any word we want to be guessed.
-const guesses = ['-', '-', '-', '-', '-', '-', '-', '-', '-', '-']; // Blank letter spaces to be completed if letter is guessed.
+const rightLeg = document.getElementById('leg-right');
 
+// Local variables
+const letters = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T']; // Any word we want to be guessed.
+const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank letter spaces to be completed if letter is guessed.
+
+// Application
+
+// Initial display state:
+display.innerHTML += `<p id="guess-characters"> ${guesses.join(' ')} </p>`
 
 // How to write in HTML
 // let display = document.getElementById('display');

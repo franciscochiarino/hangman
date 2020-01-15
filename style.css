@@ -24,3 +24,7 @@ section {
 #leg-right {
     display: none;
 }
+
+#guess-characters {
+    font-size: 3rem;
+}
