@@ -55,14 +55,38 @@ const guessLetter = (pickedLetter) => {
     // Display unguessed letter message:
     else {
         counter += 1;
-        console.log(counter);
-        if (counter >= 7) {
+        if (counter >= 6) { // Six because 6 body parts appear: head, body, leftArm, rightArm, leftLeg and rightLeg.
             outputMessage.innerHTML = `<p>You lost.</p>`
         } else {
             outputMessage.innerHTML = `<p>The secret word doen\'t have any ${pickedLetter}</p>`
         }
     }   
+
+    // Draw:
+    switch (counter) {
+        case 1:
+            head.style.display = 'inline';
+            break;
+        case 2:
+            body.style.display = 'inline';
+            break;
+        case 3:
+            leftArm.style.display = 'inline';
+            break;
+        case 4:
+            rightArm.style.display = 'inline';
+            break;
+        case 5:
+            leftLeg.style.display = 'inline';
+            break;
+        case 6:
+            rightLeg.style.display = 'inline';
+            break;
+    }
+    
 }
+
+
 
 // How to write in HTML
 // let display = document.getElementById('display');
