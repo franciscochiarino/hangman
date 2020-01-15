@@ -29,6 +29,7 @@ section {
 
 body {
     font-family: 'Alata', sans-serif;
+    background-color: #68b98f;
 }
 
 #word-display {
@@ -70,6 +71,6 @@ input {
 input[type="submit"] {
     border: 1px solid black;
     padding: 0.5rem 1rem;
-    background-color: #212121;
+    background-color: #021c1e;
     color: #fff;
 }
