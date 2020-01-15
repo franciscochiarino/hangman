@@ -63,6 +63,10 @@ input {
     margin: 0.5rem;
 }
 
+#letter {
+    padding: 0.2rem 0;
+}
+
 input[type="submit"] {
     border: 1px solid black;
     padding: 0.5rem 1rem;
