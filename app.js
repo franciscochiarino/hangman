@@ -35,10 +35,13 @@ const guessLetter = (pickedLetter) => {
             wordDisplay.innerHTML = `<p> ${guesses.join(' ')} </p>`;
             outputMessage.innerHTML = `<p> Well done! </p>`;
         }
-
-        // Displays winning message if the word is guessed:
-
     }
+
+    // Displays winning message if the word is guessed:
+    if (letters.toString() === guesses.toString()) {
+        outputMessage.innerHTML = `<p> You fucking won! </p>`;
+    }
+
 }
 
 // How to write in HTML
