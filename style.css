@@ -25,6 +25,6 @@ section {
     display: none;
 }
 
-#guess-characters {
+#word-display {
     font-size: 3rem;
 }
