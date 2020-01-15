@@ -15,3 +15,12 @@ html {
 section {
     margin: 2rem;
 }
+
+#head,
+#body,
+#arm-left,
+#arm-right,
+#leg-left,
+#leg-right {
+    display: none;
+}
