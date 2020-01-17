@@ -2,6 +2,7 @@
 // DOM variables
 const wordDisplay = document.getElementById('word-display');
 const outputMessage = document.getElementById('output-message');
+const usedCharacter = document.getElementById('used-character');
 const letter = document.getElementById('letter');
 const head = document.getElementById('head');
 const body = document.getElementById('body');
@@ -30,7 +31,6 @@ const guessLetter = (pickedLetter) => {
     if (pickedLetter.length > 1) {
         return outputMessage.innerHTML = `<p>Make sure you introduce one character at a time</p>`
     }
-    console.log(pickedLetter);
 
     // Iterate through letter array, and check if letter is in letters array:
     for (let i = 0; i < letters.length; i++) { 
@@ -58,6 +58,8 @@ const guessLetter = (pickedLetter) => {
         if (counter >= 6) { // Six because 6 body parts appear: head, body, leftArm, rightArm, leftLeg and rightLeg.
             outputMessage.innerHTML = `<p>You lost.</p>`
         } else {
+            // Display the letter in the used-characters container
+            usedCharacter.innerHTML += `${pickedLetter} `;
             outputMessage.innerHTML = `<p>The secret word doesn\'t have any ${pickedLetter}</p>`
         }
     }   
@@ -84,6 +86,6 @@ const guessLetter = (pickedLetter) => {
             break;
     }
 
-    return letter.value = '';
+    letter.value = '';
     
 }
