@@ -17,7 +17,10 @@ const rightLeg = document.getElementById('leg-right');
 // Any word we want to be guessed.
 const possibleWords = [
     ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'], 
-    ['F', 'R', 'A', 'N', 'C', 'I', 'S', 'C', 'O']
+    ['A','W', 'K', 'W', 'A', 'R', 'D'],
+    ['O', 'X', 'Y', 'G', 'E', 'N'],
+    ['Z', 'O', 'M', 'B', 'I', 'E'],
+    ['Y', 'A', 'C', 'H', 'T']
 ]; 
 const letters = possibleWords[Math.floor(Math.random() * possibleWords.length)]; // Selects one array in possibleWords array.
 
