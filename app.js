@@ -26,7 +26,9 @@ const guesses = [];
 for (let i = 0; i < letters.length; i++) {
     guesses.push('_');
 }
-let counter = 0; // Checks how many times the player fails.
+
+// Checks how many times the player fails.
+let counter = 0; 
 
 // Display's initial state:
 wordDisplay.innerHTML = `<p> ${guesses.join(' ')} </p>`;
