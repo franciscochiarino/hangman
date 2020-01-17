@@ -42,8 +42,11 @@ body {
 }
 
 #used-characters {
+    display: flex;
     height: 3rem;
     border: 2px solid black;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main */
