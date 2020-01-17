@@ -32,6 +32,10 @@ body {
     background-color: #68b98f;
 }
 
+#display {
+    width: 520px;
+}
+
 #word-display {
     font-size: 2.3rem;
     font-family: 'Fira Mono', monospace;
