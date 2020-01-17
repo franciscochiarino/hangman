@@ -20,7 +20,12 @@ const possibleWords = [
     ['F', 'R', 'A', 'N', 'C', 'I', 'S', 'C', 'O']
 ]; 
 const letters = possibleWords[Math.floor(Math.random() * possibleWords.length)]; // Selects one array in possibleWords array.
-const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank letter spaces to be completed if letter is guessed.
+
+// Create array with same length as word.
+const guesses = [];
+for (let i = 0; i < letters.length; i++) {
+    guesses.push('_');
+}
 let counter = 0; // Checks how many times the player fails.
 
 // Display's initial state:
