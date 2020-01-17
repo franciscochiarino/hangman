@@ -13,9 +13,13 @@ const rightLeg = document.getElementById('leg-right');
 
 
 // Local variables
-const possibleWords = [['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'], ['F', 'R', 'A', 'N', 'C', 'I', 'S', 'C', 'O']]; // Any word we want to be guessed.
+
+// Any word we want to be guessed.
+const possibleWords = [
+    ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'], 
+    ['F', 'R', 'A', 'N', 'C', 'I', 'S', 'C', 'O']
+]; 
 const letters = possibleWords[Math.floor(Math.random() * possibleWords.length)]; // Selects one array in possibleWords array.
-console.log(letters)
 const guesses = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']; // Blank letter spaces to be completed if letter is guessed.
 let counter = 0; // Checks how many times the player fails.
 
