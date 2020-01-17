@@ -83,5 +83,7 @@ const guessLetter = (pickedLetter) => {
             rightLeg.style.display = 'inline';
             break;
     }
+
+    return letter.value = '';
     
 }

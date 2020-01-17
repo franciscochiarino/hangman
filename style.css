@@ -41,6 +41,11 @@ body {
     font-size: 1.3rem;
 }
 
+#used-characters {
+    height: 3rem;
+    border: 2px solid black;
+}
+
 /* Main */
 
 .flex-container {
