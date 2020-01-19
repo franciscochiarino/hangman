@@ -10,6 +10,8 @@ const leftArm = document.getElementById('arm-left');
 const rightArm = document.getElementById('arm-right');
 const leftLeg = document.getElementById('leg-left');
 const rightLeg = document.getElementById('leg-right');
+const happy = document.getElementById('happy');
+const sad = document.getElementById('sad');
 
 
 // Local variables
@@ -61,6 +63,8 @@ const guessLetter = (pickedLetter) => {
     // Display winning message if the word is guessed:
     if (letters.toString() === guesses.toString()) {
         outputMessage.innerHTML = `<p> You won! </p>`;
+        sad.style.display = 'none';
+        happy.style.display = 'inline';
     }
 
     // Display guessed letter message:

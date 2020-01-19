@@ -21,7 +21,8 @@ section {
 #arm-left,
 #arm-right,
 #leg-left,
-#leg-right {
+#leg-right,
+#happy {
     display: none;
 }
 
