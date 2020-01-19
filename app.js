@@ -60,7 +60,7 @@ const guessLetter = (pickedLetter) => {
 
     // Display winning message if the word is guessed:
     if (letters.toString() === guesses.toString()) {
-        outputMessage.innerHTML = `<p> You fucking won! </p>`;
+        outputMessage.innerHTML = `<p> You won! </p>`;
     }
 
     // Display guessed letter message:

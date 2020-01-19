@@ -24,20 +24,26 @@
                         <line x1="208.5" y1="6" x2="208.5" y2="64" stroke="#272727"/>
                     </g>
                     <!-- Head -->
-                    <g id="head">
-                        <circle id="circle" cx="208" cy="90" r="25.5" fill="#FBDAB4" stroke="black"/>
-                        <path id="hair" d="M182 90L194.381 75L207.752 78.75L220.629 75L234 90" stroke="black"/>
-                        <g id="eye-left">
-                        <circle cx="200.5" cy="85.5" r="2.5" fill="#F8F4F4"/>
-                        <circle cx="200.5" cy="86.5" r="0.5" fill="black"/>
+                    <svg width="65" height="58" viewBox="0 0 65 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="head">
+                            <circle id="circle" cx="33" cy="32" r="25.5" fill="#FBDAB4" stroke="black"/>
+                            <path id="hair" d="M3 27L5.5 35L13 26L18.5 23L23 17L28.5 19L36 15.5L45 21.5H53L51.5 29.5L60.5 36L63.5 25L60.5 14.5L51.5 5.5L40.5 0.5H29.5L23 2L14.5 5.5L9 11.5L1 13.5L3 18V27Z" fill="#021C1E" stroke="black"/>
+                            <circle id="eye-left" cx="24.5" cy="29.5" r="4.5" fill="#F8F4F4"/>
+                            <circle id="eye-right" cx="41.5" cy="29.5" r="4.5" fill="#F8F4F4"/>
+                            <path id="nose" d="M33.5 31.5L32.5 38H34.5" stroke="black"/>
+                            <g id="sad">
+                                <circle id="sad-eye-left" cx="24.5" cy="31.5" r="1.5" fill="black"/>
+                                <circle id="sad-eye-right" cx="41.5" cy="31.5" r="1.5" fill="black"/>
+                                <path id="mouth-sad" d="M27 48.7143L32.8446 47.7601C35.6647 47.2996 38.4856 48.5769 40 51V51" stroke="black"/>
+                            </g>
+                            <g id="happy">
+                                <circle id="happy-eye-left" cx="24.5" cy="29.5" r="1.5" fill="black"/>
+                                <circle id="happy-eye-right" cx="41.5" cy="29.5" r="1.5" fill="black"/>
+                                <path id="mouth-happy" d="M27 48.5V48.5C27.8478 50.4783 30.0706 51.4765 32.1125 50.7958L39 48.5" stroke="black"/>
+                            </g>
                         </g>
-                        <g id="eye-right">
-                        <circle cx="216.5" cy="85.5" r="2.5" fill="#F8F4F4"/>
-                        <circle cx="216.5" cy="86.5" r="0.5" fill="black"/>
-                        </g>
-                        <path id="nose" d="M208.5 89.5L207.5 96H209.5" stroke="black"/>
-                        <path id="mouth-sad" d="M202 106.714L207.845 105.76C210.665 105.3 213.486 106.577 215 109V109" stroke="black"/>
-                    </g>
+                    </svg>
+                        
                     <!-- Body -->
                     <line id="body" x1="207.5" y1="116" x2="207.5" y2="212" stroke="black" stroke-width="3"/>
                     <!-- Right Arm -->
