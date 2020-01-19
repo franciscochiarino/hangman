@@ -13,49 +13,40 @@
     <!-- Hangman Illustration -->
     <div class="flex-container">
         <section>
-            <svg width="239" height="296" viewBox="0 0 239 296" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="240" height="296" viewBox="0 0 240 296" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="hangman">
-                    <!-- Hang Stand -->
                     <g id="hang-stand">
-                        <line y1="293" x2="107" y2="293" stroke="#272727" stroke-width="6"/>
-                        <line x1="53.0506" y1="59.3659" x2="107.758" y2="5.94937" stroke="#272727" stroke-width="6" stroke-linecap="round"/>
-                        <line x1="48" y1="5" x2="239" y2="5" stroke="#272727" stroke-width="6"/>
-                        <line x1="53" y1="293" x2="53" stroke="#272727" stroke-width="6"/>
-                        <line x1="208.5" y1="6" x2="208.5" y2="64" stroke="#272727"/>
+                        <line id="Line 1" y1="293" x2="107" y2="293" stroke="black" stroke-width="6"/>
+                        <line id="Line 4" x1="53.0506" y1="59.3659" x2="107.758" y2="5.94937" stroke="black" stroke-width="6" stroke-linecap="round"/>
+                        <line id="Line 3" x1="48" y1="5" x2="239" y2="5" stroke="black" stroke-width="6"/>
+                        <line id="Line 2" x1="53" y1="293" x2="53" stroke="black" stroke-width="6"/>
+                        <line id="Line 5" x1="208.5" y1="6" x2="208.5" y2="64" stroke="black"/>
                     </g>
-                    <!-- Head -->
-                    <svg width="65" height="58" viewBox="0 0 65 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="head">
-                            <circle id="circle" cx="33" cy="32" r="25.5" fill="#FBDAB4" stroke="black"/>
-                            <path id="hair" d="M3 27L5.5 35L13 26L18.5 23L23 17L28.5 19L36 15.5L45 21.5H53L51.5 29.5L60.5 36L63.5 25L60.5 14.5L51.5 5.5L40.5 0.5H29.5L23 2L14.5 5.5L9 11.5L1 13.5L3 18V27Z" fill="#021C1E" stroke="black"/>
-                            <circle id="eye-left" cx="24.5" cy="29.5" r="4.5" fill="#F8F4F4"/>
-                            <circle id="eye-right" cx="41.5" cy="29.5" r="4.5" fill="#F8F4F4"/>
-                            <path id="nose" d="M33.5 31.5L32.5 38H34.5" stroke="black"/>
-                            <g id="sad">
-                                <circle id="sad-eye-left" cx="24.5" cy="31.5" r="1.5" fill="black"/>
-                                <circle id="sad-eye-right" cx="41.5" cy="31.5" r="1.5" fill="black"/>
-                                <path id="mouth-sad" d="M27 48.7143L32.8446 47.7601C35.6647 47.2996 38.4856 48.5769 40 51V51" stroke="black"/>
-                            </g>
-                            <g id="happy">
-                                <circle id="happy-eye-left" cx="24.5" cy="29.5" r="1.5" fill="black"/>
-                                <circle id="happy-eye-right" cx="41.5" cy="29.5" r="1.5" fill="black"/>
-                                <path id="mouth-happy" d="M27 48.5V48.5C27.8478 50.4783 30.0706 51.4765 32.1125 50.7958L39 48.5" stroke="black"/>
-                            </g>
+                    <g id="head">
+                        <circle id="circle" cx="208" cy="90" r="25.5" fill="#FBDAB4" stroke="black"/>
+                        <path id="hair" d="M178 85L180.5 93L188 84L193.5 81L198 75L203.5 77L211 73.5L220 79.5H228L226.5 87.5L235.5 94L238.5 83L235.5 72.5L226.5 63.5L215.5 58.5H204.5L198 60L189.5 63.5L184 69.5L176 71.5L178 76V85Z" fill="#021C1E" stroke="black"/>
+                        <circle id="eye-left" cx="199.5" cy="87.5" r="4.5" fill="#F8F4F4"/>
+                        <circle id="eye-right" cx="216.5" cy="87.5" r="4.5" fill="#F8F4F4"/>
+                        <path id="nose" d="M208.5 89.5L207.5 96H209.5" stroke="black"/>
+                        <g id="sad">
+                            <circle id="sad-eye-left" cx="199.5" cy="89.5" r="1.5" fill="black"/>
+                            <circle id="sad-eye-right" cx="216.5" cy="89.5" r="1.5" fill="black"/>
+                            <path id="mouth-sad" d="M202 106.714L207.845 105.76C210.665 105.3 213.486 106.577 215 109V109" stroke="black"/>
                         </g>
-                    </svg>
-                        
-                    <!-- Body -->
-                    <line id="body" x1="207.5" y1="116" x2="207.5" y2="212" stroke="black" stroke-width="3"/>
-                    <!-- Right Arm -->
+                        <g id="happy">
+                            <circle id="happy-eye-left" cx="199.5" cy="87.5" r="1.5" fill="black"/>
+                            <circle id="happy-eye-right" cx="216.5" cy="87.5" r="1.5" fill="black"/>
+                            <path id="mouth-happy" d="M202 106.5V106.5C202.848 108.478 205.071 109.476 207.112 108.796L214 106.5" stroke="black"/>
+                        </g>
+                    </g>
                     <path id="arm-right" d="M208 135L224 172" stroke="black" stroke-width="3" stroke-linecap="round"/>
-                    <!-- Left Arm -->
-                    <line id="arm-left" x1="206.692" y1="135.005" x2="189.005" y2="171.308" stroke="black" stroke-width="3" stroke-linecap="round"/>
-                    <!-- Right Leg -->
                     <line id="leg-right" x1="207.956" y1="212.82" x2="224.82" y2="254.044" stroke="black" stroke-width="3" stroke-linecap="round"/>
-                    <!-- Left Leg -->
                     <line id="leg-left" x1="190.192" y1="254.039" x2="207.367" y2="212.808" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                    <line id="body" x1="207.5" y1="116" x2="207.5" y2="212" stroke="black" stroke-width="3"/>
+                    <line id="arm-left" x1="206.692" y1="135.005" x2="189.005" y2="171.308" stroke="black" stroke-width="3" stroke-linecap="round"/>
                 </g>
             </svg>
+                
         </section>
         <!-- Stuff displayed by app.js -->
         <section id="display">
