@@ -1,5 +1,5 @@
 
-// DOM variables
+// -- DOM variables --
 const wordDisplay = document.getElementById('word-display');
 const outputMessage = document.getElementById('output-message');
 const usedCharacter = document.getElementById('used-character');
@@ -14,7 +14,7 @@ const happy = document.getElementById('happy');
 const sad = document.getElementById('sad');
 
 
-// Local variables
+// -- Local variables --
 
 // Any word we want to be guessed.
 const possibleWords = [
@@ -39,7 +39,9 @@ let counter = 0;
 wordDisplay.innerHTML = `<p> ${guesses.join(' ')} </p>`;
 outputMessage.innerHTML = `<p>Time to play hangman!</p>`;
 
-// Application
+
+// -- Application --
+
 const guessLetter = (pickedLetter) => {
     pickedLetter = letter.value;
     let isValid = false; // Needed to check if the player missed.
