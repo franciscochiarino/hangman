@@ -11,10 +11,6 @@ A simple hangman game where you have a certain amount of chances to guess a word
 -   Nobody sponsors this project.
 -   The content requiered for this proyect is only the graphic content (drawing) which I did myself.
 
-## Wireframes
-
-[picture]
-
 ## Time
 
 -   Estimated: 5 hours over one weeks.
